@@ -153,6 +153,20 @@ section .container {
   }
 }
 /*!---------- TYPOGRAPHY ----------*/
+@font-face {
+  font-family: 'Aleo';
+  src: url('Aleo-Light-webfont.eot');
+  src: url('Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'), url('Aleo-Light-webfont.woff') format('woff'), url('Aleo-Light-webfont.ttf') format('truetype'), url('Aleo-Light-webfont.svg#aleolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Aleo';
+  src: url('../fonts/Aleo-Bold-webfont.eot');
+  src: url('../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Aleo-Bold-webfont.woff') format('woff'), url('../fonts/Aleo-Bold-webfont.ttf') format('truetype'), url('../fonts/Aleo-Bold-webfont.svg#aleobold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -4098,4 +4112,11 @@ footer .container {
 /* Custom */
 .background-image-holder {
   background: url("../img/bg_argyle.png") repeat 0 0 / auto auto !important;
+}
+.header h2 b {
+  display: block;
+}
+.header h5,
+.testimonial h4 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
