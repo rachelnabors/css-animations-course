@@ -74,7 +74,7 @@ img {
 .hero-slider {
   position: relative;
   overflow: hidden;
-  background: #222;
+  background: #263142;
 }
 .flex-control-nav {
   bottom: 16px;
@@ -155,8 +155,8 @@ section .container {
 /*!---------- TYPOGRAPHY ----------*/
 @font-face {
   font-family: 'Aleo';
-  src: url('Aleo-Light-webfont.eot');
-  src: url('Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'), url('Aleo-Light-webfont.woff') format('woff'), url('Aleo-Light-webfont.ttf') format('truetype'), url('Aleo-Light-webfont.svg#aleolight') format('svg');
+  src: url('../fonts/Aleo-Light-webfont.eot');
+  src: url('../fonts/Aleo-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Aleo-Light-webfont.woff') format('woff'), url('../fonts/Aleo-Light-webfont.ttf') format('truetype'), url('../fonts/Aleo-Light-webfont.svg#aleolight') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -166,6 +166,19 @@ section .container {
   src: url('../fonts/Aleo-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Aleo-Bold-webfont.woff') format('woff'), url('../fonts/Aleo-Bold-webfont.ttf') format('truetype'), url('../fonts/Aleo-Bold-webfont.svg#aleobold') format('svg');
   font-weight: bold;
   font-style: normal;
+}
+.header h2 b {
+  display: block;
+}
+.header h5,
+.testimonial h4 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.features-7 p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: left;
+  margin-top: 14px;
 }
 body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -181,14 +194,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Aleo", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #141f31;
+  font-family: "Aleo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #263142;
   margin: 0;
   cursor: default;
 }
 h1 {
   font-size: 66px;
-  line-height: 74px;
+  line-height: 68px;
   font-weight: 300;
   letter-spacing: -1px;
 }
@@ -228,7 +241,6 @@ h6.light {
 @media all and (max-width: 1024px) {
   h1 {
     font-size: 60px;
-    line-height: 68px;
   }
   h2 {
     font-size: 50px;
@@ -282,7 +294,7 @@ p.sub {
 }
 p.sub a {
   font-weight: bold;
-  color: #222;
+  color: #263142;
 }
 p:last-child {
   margin-bottom: 0;
@@ -400,7 +412,7 @@ a:hover {
 }
 section.bg-dark,
 footer.bg-dark {
-  background: #222;
+  background: #263142;
 }
 section.bg-dark.bg-secondary,
 footer.bg-dark.bg-secondary {
@@ -606,7 +618,7 @@ video {
   height: 0;
   border-style: solid;
   border-width: 15px 0 15px 26.0px;
-  border-color: transparent transparent transparent #222222;
+  border-color: transparent transparent transparent #263142;
 }
 .play-button:hover {
   transform: scale(1.1);
@@ -628,7 +640,7 @@ video {
     height: 0;
     border-style: solid;
     border-width: 10px 0 10px 20.0px;
-    border-color: transparent transparent transparent #222222;
+    border-color: transparent transparent transparent #263142;
   }
 }
 .play-button.video-playing {
@@ -642,7 +654,7 @@ video {
   border: none;
   width: 6px;
   height: 30px;
-  background: #222;
+  background: #263142;
   margin-top: -15px;
   margin-left: -10px;
 }
@@ -651,7 +663,7 @@ video {
   width: 6px;
   height: 30px;
   position: absolute;
-  background: #222;
+  background: #263142;
   top: 50%;
   margin-top: -15px;
   margin-left: 2px;
@@ -673,7 +685,7 @@ video {
   height: 0;
   border-style: solid;
   border-width: 20px 0 20px 31.0px;
-  border-color: transparent transparent transparent #222222;
+  border-color: transparent transparent transparent #263142;
 }
 @media all and (max-width: 767px) {
   .play-button.large {
@@ -689,7 +701,7 @@ video {
     height: 0;
     border-style: solid;
     border-width: 15px 0 15px 25.0px;
-    border-color: transparent transparent transparent #222222;
+    border-color: transparent transparent transparent #263142;
   }
 }
 .modal-video {
@@ -899,7 +911,7 @@ nav {
   max-height: 80px !important;
 }
 .nav-container.dark {
-  background: #5f697a;
+  background: #263142;
 }
 nav {
   -webkit-backface-visibility: hidden;
@@ -912,7 +924,7 @@ nav a {
   color: #666;
 }
 nav .logo {
-  max-height: 50px;
+  max-height: 26px;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -951,7 +963,7 @@ nav.shrink .btn {
   border-radius: 0;
 }
 nav.dark .navbar {
-  background: #222;
+  background: #263142;
   color: #fff;
 }
 nav.dark a {
@@ -1089,7 +1101,7 @@ nav ul li:hover .subnav .subnav {
   width: 28px;
   height: 4px;
   position: relative;
-  background: #222;
+  background: #263142;
   transition: all 0.2s ease;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -1144,7 +1156,7 @@ nav ul li:hover .subnav .subnav {
   position: relative;
 }
 .nav-1 .logo {
-  margin-top: 28px;
+  margin-top: 21px;
 }
 .nav-1 .menu {
   margin-top: 26px;
@@ -1157,6 +1169,9 @@ nav ul li:hover .subnav .subnav {
 }
 .nav-1.shrink .menu {
   margin-top: 17px;
+}
+.nav-1.shrink .logo {
+  margin-top: 18px;
 }
 .nav-1.shrink .btn {
   margin-top: 7px;
@@ -1190,7 +1205,7 @@ nav ul li:hover .subnav .subnav {
   max-height: 60px;
   line-height: 55px;
   overflow: hidden;
-  background: #222;
+  background: #263142;
   -webkit-backface-visibility: hidden;
 }
 .nav-3 div,
@@ -1446,7 +1461,7 @@ nav.dismiss-active {
   top: 0;
   left: 0;
   z-index: 1;
-  background: #222;
+  background: #263142;
   background-size: cover !important;
   background-position: 50% 50% !important;
   transition: all 0.3s ease;
@@ -1471,10 +1486,6 @@ nav.dismiss-active {
 .main-container section:first-of-type .slides li > .background-image-holder,
 .main-container section:first-of-type .background-image-holder {
   top: 0;
-}
-.header {
-  padding: 0;
-  background: #222;
 }
 .header .contained-form h6 {
   margin-bottom: 16px;
@@ -1878,9 +1889,6 @@ nav.dismiss-active {
     padding: 120px 0;
   }
 }
-.header-8 {
-  background: #0099cc;
-}
 .header-8 h2 {
   margin-bottom: 10px;
 }
@@ -1904,7 +1912,7 @@ nav.dismiss-active {
   background: #bbc8ce;
 }
 .header-8.bg-dark .header-lower {
-  background: #222;
+  background: #263142;
 }
 .header-8 .header-lower h4 {
   margin-bottom: 40px;
@@ -2866,7 +2874,7 @@ nav.dismiss-active {
   margin-right: 20px;
 }
 .cta-9 p.lead {
-  color: #222;
+  color: #263142;
   display: inline;
   cursor: pointer;
 }
@@ -2907,17 +2915,14 @@ nav.dismiss-active {
 }
 .testimonials-1 .comma {
   font-size: 66px;
-  color: #222;
+  color: #263142;
   font-style: italic;
   display: inline-block;
 }
 .testimonials-1.bg-dark .comma {
   color: #fff;
 }
-.testimonial h4 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 26px;
-  line-height: 30px;
+.testimonials-1 h4 {
   margin-bottom: 26.66666667px;
   font-style: italic;
 }
@@ -3044,6 +3049,10 @@ nav.dismiss-active {
 .pricing .row:nth-of-type(1) {
   margin-bottom: 53.33333333px;
 }
+.price-container {
+  font-family: "Aleo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 26.66666667px;
+}
 .pricing-1 .pricing-option h6 {
   font-weight: 300;
   letter-spacing: 2px;
@@ -3054,7 +3063,6 @@ nav.dismiss-active {
 .pricing-1 .price,
 .pricing-1 .terms {
   color: #0099cc;
-  font-family: "Aleo", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .pricing-1 .dollar,
 .pricing-1 .terms {
@@ -3064,13 +3072,10 @@ nav.dismiss-active {
   position: relative;
   bottom: 67px;
 }
-.pricing-1 .price {
+.price {
   font-size: 120px;
   font-weight: 700;
   line-height: 120px;
-}
-.pricing-1 .price-container {
-  margin-bottom: 26.66666667px;
 }
 .pricing-1 h5 {
   margin-bottom: 20px;
@@ -3176,11 +3181,6 @@ nav.dismiss-active {
   position: relative;
   bottom: 67px;
 }
-.pricing-2 .price {
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 120px;
-}
 .pricing-2 .price-container {
   margin-bottom: 26.66666667px;
 }
@@ -3249,8 +3249,6 @@ nav.dismiss-active {
 }
 .pricing-3 .price {
   font-size: 96px;
-  font-weight: 700;
-  line-height: 120px;
 }
 .pricing-3 .price-container {
   margin-bottom: 26.66666667px;
@@ -3380,11 +3378,6 @@ nav.dismiss-active {
   position: relative;
   bottom: 67px;
 }
-.pricing-4 .price {
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 120px;
-}
 .pricing-4 .price-container {
   margin-bottom: 26.66666667px;
 }
@@ -3447,11 +3440,6 @@ nav.dismiss-active {
 .pricing-5 .dollar {
   position: relative;
   bottom: 67px;
-}
-.pricing-5 .price {
-  font-size: 120px;
-  font-weight: 700;
-  line-height: 120px;
 }
 .pricing-5 .price-container {
   margin-bottom: 16px;
@@ -3622,7 +3610,7 @@ nav.dismiss-active {
 }
 .insta-title i {
   font-size: 20px;
-  color: #222;
+  color: #263142;
   display: inline-block;
   margin: 0 8px;
 }
@@ -3872,7 +3860,7 @@ nav.dismiss-active {
   margin-top: 40px;
 }
 .news-1 p.lead {
-  color: #222;
+  color: #263142;
 }
 @media all and (max-width: 767px) {
   .news-1 h2 {
@@ -3946,10 +3934,10 @@ footer .container {
   opacity: 1;
 }
 .footer-1 img {
-  max-height: 50px;
+  max-height: 17px;
 }
 .footer-1 .sub {
-  line-height: 50px;
+  line-height: 17px;
   opacity: 0.7;
 }
 @media all and (max-width: 767px) {
@@ -3970,14 +3958,13 @@ footer .container {
 }
 .footer-2 .menu li {
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 12px;
 }
 .footer-2 .menu {
   margin-bottom: 80px;
 }
 .footer-2 img {
-  max-height: 50px;
+  max-height: 17px;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -3988,7 +3975,7 @@ footer .container {
   }
 }
 .footer-3 img {
-  max-height: 50px;
+  max-height: 17px;
 }
 .footer-3 .lower {
   border-top: 1px solid #5f697a;
@@ -4046,7 +4033,7 @@ footer .container {
   background: rgba(255, 255, 255, 0.2);
 }
 .footer-4 img {
-  max-height: 50px;
+  max-height: 17px;
   margin-bottom: 20px;
 }
 @media all and (max-width: 767px) {
@@ -4058,7 +4045,7 @@ footer .container {
   padding: 40px 0;
 }
 .footer-5 img {
-  max-height: 50px;
+  max-height: 17px;
   position: relative;
   bottom: 4px;
   margin-right: 32px;
@@ -4083,7 +4070,7 @@ footer .container {
 }
 .footer-6 img {
   display: block;
-  max-height: 50px;
+  max-height: 26px;
   margin-bottom: 40px;
 }
 .footer-6 input[type="submit"] {
@@ -4109,14 +4096,133 @@ footer .container {
     padding: 0;
   }
 }
-/* Custom */
-.background-image-holder {
-  background: url("../img/bg_argyle.png") repeat 0 0 / auto auto !important;
+/* Feature Images */
+.features-3 .feature img {
+  display: block;
+  height: 133px;
+  margin: 0 auto;
 }
-.header h2 b {
+.feature h5 {
+  margin-top: 18px;
+}
+.features-6 .feature {
+  padding-top: 110px;
+  position: relative;
+}
+.features-6 img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Unique HEading */
+.tuna-wrap {
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  margin: 0 auto 18px;
+  position: relative;
+}
+.tuna-wrap:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  padding-top: 47.5%;
+}
+.tuna {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 250ms linear;
+}
+.loaded .tuna {
+  animation: walkOver 3s linear both;
+}
+.loaded .tuna img {
+  animation: walkCycle 730ms steps(12) infinite;
+  width: 100%;
+  height: auto;
+}
+@keyframes walkCycle {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+@keyframes walkOver {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(75%);
+  }
+}
+.paused {
+  animation-play-state: paused !important;
+}
+.paused img {
+  animation-play-state: paused !important;
+}
+.loaded .tuna3 {
+  animation-iteration-count: .5;
+  z-index: 1;
+}
+.tuna3 {
+  opacity: 1;
+}
+.loaded .tuna4 {
+  animation-iteration-count: .75;
+}
+.tuna4 {
+  opacity: .5;
+}
+.tuna5 {
+  opacity: .3;
+}
+.loaded .tuna1 {
+  opacity: .3;
+}
+.loaded .tuna2 {
+  opacity: .5;
+  transition-delay: 600ms;
+}
+h1 {
+  font-weight: normal;
+  font-size: 2.875em;
+  margin: .5em 0 0;
+}
+h1 strong {
   display: block;
 }
-.header h5,
-.testimonial h4 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+h1,
+h1 strong,
+.tagline,
+.tagline strong {
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+}
+h1 strong {
+  transition-delay: 800ms;
+}
+.tagline {
+  transition-delay: 1200ms;
+  font-size: 1.125em;
+  line-height: 1.44em;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+.tagline strong {
+  transition-delay: 2000ms;
+}
+.titled h1,
+.titled h1 strong,
+.titled .tagline,
+.titled .tagline strong {
+  opacity: 1;
 }
