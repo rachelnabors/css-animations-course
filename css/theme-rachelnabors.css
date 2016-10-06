@@ -1,4 +1,5 @@
 /*!
+// Run lessc less/theme-rachelnabors.less theme-rachelnabors.css
 // Contents
 // ------------------------------------------------
 
@@ -4225,4 +4226,9 @@ h1 strong {
 .titled .tagline,
 .titled .tagline strong {
   opacity: 1;
+}
+.p_cheatsheet {
+  margin-bottom: -81px;
+  max-width: 100%;
+  height: auto;
 }
