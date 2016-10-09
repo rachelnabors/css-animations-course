@@ -25,6 +25,30 @@ $(document).ready(function() {
 
     document.body.classList.add("loaded");
 
+    /* Pass URL referres on to price links */
+    // get URL
+    var url = window.location.href;
+
+    // create array of values
+    var hashes = url.split('?');
+
+    // is hashes bigger than 1?
+    if(hashes.length > 1) {
+
+        // append them to the price hrefs
+        for (var i = 1; i < hashes.length; i++) {
+
+            // run the function
+            $("#packages a").each(function(){
+                var $this = $(this);
+                var _href = $this.attr("href");
+                $this.attr("href", _href + '?' + hashes[i]);
+            });
+        }
+    }
+
+    console.log(hashes);
+
 	// Variables
 
 	var triggerVid;
