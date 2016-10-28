@@ -1515,18 +1515,23 @@ footer .container{ position: relative; z-index: 2; }
 /* Unique HEading */
 
 .tuna-wrap {
-  height: 0;
   width: 100%;
   min-width: 200px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 18px;
   position: relative;
 }
 
-.tuna {
-  height: 0;
+.tuna-wrap:before {
+  content: " ";
+  display: block;
   width: 100%;
   padding-top: 47.5%; //190px;
+}
+
+.tuna {
+  height: 100%;
+  width: 100%;
   opacity: 0;
   overflow: hidden;
   position: absolute;
