@@ -4118,42 +4118,39 @@ footer .container {
 }
 /* Unique HEading */
 .tuna-wrap {
+  height: 0;
   width: 100%;
   min-width: 200px;
   max-width: 400px;
-  margin: 0 auto 18px;
+  margin: 0 auto;
   position: relative;
 }
-.tuna-wrap:before {
-  content: " ";
-  display: block;
+.tuna {
+  height: 0;
   width: 100%;
   padding-top: 47.5%;
-}
-.tuna {
-  height: 100%;
-  width: 100%;
   opacity: 0;
   overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 250ms linear;
 }
 .loaded .tuna {
   animation: walkOver 3s linear both;
 }
-.loaded .tuna img {
-  animation: walkCycle 730ms steps(12) infinite;
+.tuna img {
   width: 100%;
   height: auto;
 }
-@keyframes walkCycle {
+.loaded .tuna img {
+  animation: walk-cycle 730ms steps(12) infinite;
+}
+@keyframes walk-cycle {
   0% {
-    transform: translateY(0);
+    transform: translateY(-8.33%);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-108.33%);
   }
 }
 @keyframes walkOver {
@@ -4161,7 +4158,7 @@ footer .container {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(75%);
+    transform: translateX(100%);
   }
 }
 .paused {
@@ -4170,28 +4167,25 @@ footer .container {
 .paused img {
   animation-play-state: paused !important;
 }
-.loaded .tuna3 {
+.tuna:nth-child(1) {
+  animation-iteration-count: .1;
+  opacity: .3;
+}
+.tuna:nth-child(2) {
+  animation-iteration-count: .3;
+  opacity: .5;
+}
+.tuna:nth-child(3) {
   animation-iteration-count: .5;
+  opacity: 1;
   z-index: 1;
 }
-.tuna3 {
-  opacity: 1;
-}
-.loaded .tuna4 {
+.tuna:nth-child(4) {
   animation-iteration-count: .75;
-}
-.tuna4 {
   opacity: .5;
 }
-.tuna5 {
+.tuna:nth-child(5) {
   opacity: .3;
-}
-.loaded .tuna1 {
-  opacity: .3;
-}
-.loaded .tuna2 {
-  opacity: .5;
-  transition-delay: 600ms;
 }
 h1 {
   font-weight: normal;

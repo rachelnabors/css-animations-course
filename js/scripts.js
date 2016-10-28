@@ -2,28 +2,27 @@ $(document).ready(function() {
 
 	"use strict";
 
+    var $body = $("body");
+
     /* For cat loaded image */
     var cats = document.querySelectorAll(".tuna");
     cats = Array.prototype.slice.call(cats);
 
-
     cats.forEach(function(cat) {
-      // for middle + 1
       cat.addEventListener("animationend", function(event){
         if (event.animationName === "walkOver") {
+          // pauses sprite sheet walk cycle
           cat.classList.add("paused");
         }
-        document.body.classList.add("titled");
+        // fade in those tasty headlines
+        $body.addClass("titled");
       });
-      // stops all other cats after they transition in.
-      cat.addEventListener("transitionend", function(event){
-        if (event.propertyName === "opacity") {
-          cat.classList.add("paused");
-        }
-      });
+
     });
 
-    document.body.classList.add("loaded");
+    setTimeout(function(){
+      $body.addClass("loaded");
+    }, 200)
 
     /* Pass URL referres on to price links */
     // get URL
